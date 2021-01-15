@@ -77,9 +77,9 @@
 
 	            x2 = number * 0.5F;
 	            y  = number;
-	            i  = * ( long * ) &y;                       // evil floating point bit level hacking
+	            i  = * ( long * ) &ampy;                       // evil floating point bit level hacking
 	            i  = 0x5f3759df - ( i >> 1 ); 
-	            y  = * ( float * ) &i;
+	            y  = * ( float * ) &ampi;
 	            y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
 	    //	    y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed
 
@@ -159,8 +159,8 @@
 	  in the sentence eg subject, direct object, indirect object
 	</details>
 	</section>
-	<h3 id="Pizza">Pizza rolls</h3>
 	<section>
+	<h3 id="Pizza">Pizza rolls</h3>
 	<form>
 	  <fieldset>
 	    <legend>Leave a comment on my webzone, I'll mail you a pizza roll!</legend>
