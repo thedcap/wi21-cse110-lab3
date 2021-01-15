@@ -1,9 +1,264 @@
 <html>
-	<head>
-		<meta> 
-		<title> dcap's Page </title>
-		<link rel="icon" href="img/terminal.png">
-		</meta>
-	</head>
+  <head>
+	<meta>
+	<title> dcap's Page </title>
+	<link rel="icon" href="img/terminal.png">
+	</meta>
+  </head>
+  <body>
+	<header>
+	  <h1>Welcome to dcap's Page</h1>
+	  <h2>This page is for the illustrious CSE 110 course</h2>
+	  <hr>
+	</header>
+	<main>
+	  Tunes?<br>
+	  <audio controls loop
+	    src="img/LeaderofthePack.ogg" type="audio/ogg">
+	  </audio><br><br>
+	  GOTO:
+	  <nav>
+		<ul>
+		  <li><a href="#AboutMe">A bit about me</a></li>
+		  <li><a href="#Quotes">Some quotes</a></li>
+		  <li><a href="#Fun">A little fun</a></li>
+		  <li><a href="#Pizza">Pizza rolls</a></li>
+		  <li><a href="#Bottom">Bottom</a></li>
+		</ul>
+	  </nav>
+	  <hr>
+	  <section>
+		<h3 id="AboutMe">A bit about me</h3>
+		<picture>
+		  <img src="img/freedom_scaled.png" alt="a picture of me">
+		</picture>
+		<span>
+		  <p>
+			A favorite pic of myself, lightly edited by a friend.
+			You can get it and laugh at it <a href="img/freedom_scaled.png">
+			  here. </a>
+		  </p>
+		  <ul>
+			<li>I'm a big proponent of
+			  <a href="https://www.gnu.org/philosophy/free-sw.html"> free </a>
+			  as in freedom software</li>
+			<li>I am currently a UCSD student at Revelle and computer science major</li>
+			<li>I enjoy the Latin language and am thinking about pursuing a minor</li>
+			<li>My favorite programming language is C
+			  <aside>Yep, now <b>that</b> was a good language *sips*</aside></li>
+			<li>I tend to avoid big name search engines in favor of
+			  something a little more privacy-respecting like searx. Learn more
+			  <a href="https://searx.me/"> here! </a></li>
+		  </ul>
+		</span>
+	  </section>
+	  <section>
+		<h3 id="Quotes">Some quotes</h3>
+		<ol>
+		  <li>This is my favorite quote:</li>
+		  <blockquote>
+			It is entirely conceivable that life’s splendour forever
+			lies in wait about each one of us in all its fullness, but
+			veiled from view, deep down, invisible, far off. It is there,
+			though, not hostile, not reluctant, not deaf. If you summon
+			it by the right word, by its right name, it will come.
+			This is the essence of magic, which does not create but summons.
+		  </blockquote>
+		  by Franz Kafka<br><br>
+		  <li>The famous fast inverse square root from <i>Quake III Arena</i>
+			(stripped of a comment): </li>
+		  <pre>
+			<code>
+			  float Q_rsqrt( float number )
+			  {
+			          long i;
+			          float x2, y;
+			          const float threehalfs = 1.5F;
+
+			          x2 = number * 0.5F;
+			          y  = number;
+			          i  = * ( long * ) &y;                       // evil floating point bit level hacking
+			          i  = 0x5f3759df - ( i >> 1 ); 
+			          y  = * ( float * ) &i;
+			          y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
+			  //	  y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed
+
+			          return y;
+			  }
+			</code>
+		  </pre> 
+		</ol>
+	  </section>
+	  <section>
+	    <h3 id="Fun">A little fun</h3>
+	    <figure>
+	      <video controls>
+		<source src="img/dancing_beast.webm" type="video/webm">
+		  <source src="img/dancing_beast.mp4" type="video/mp4">
+		    Unfortunately your browser does not support our
+		    current video types.
+	      </video>
+	      <figcaption>Careful though, this video contains AoT <strong>spoilers!</strong></figcaption>
+	    </figure>
+	    <figure>
+	      <img src="img/compsci.gif">
+	      <figcaption>Its what the <em>experts</em> say...</figcaption>
+	    </figure>
+	    Here's an interesting/useful website to look up integer sequences:<br>
+	    <iframe src="https://oeis.org/" width="640" height="480"></iframe>
+	    <br>
+	    Here's a small space for a canvas. Stay tuned!
+	    <canvas width="600" height="400">
+	      It's a canvas!
+	    </canvas><br><br>
+	    <table>
+	      <caption>Wow its Latin!</caption>
+	      <colgroup>
+		<col>
+		<col span="1">
+		<col span="1">
+	      </colgroup>
+	      <tr>
+		<td></td>
+		<th>Singular</th>
+		<th>Plural</th>
+	      </tr>
+	      <tr>
+		<th>Nominative</th>
+		<td>īnsula</td>
+		<td>īnsulae</td>
+	      </tr>
+	      <tr>
+		<th>Genitive</th>
+		<td>īnsulae</td>
+		<td>īnsulārum</td>
+	      </tr>
+	      <tr>
+		<th>Dative</th>
+		<td>īnsulae</td>
+		<td>īnsulīs</td>
+	      </tr>
+	      <tr>
+		<th>Accusative</th>
+		<td>īnsulam</td>
+		<td>īnsulās</td>
+	      </tr>
+	      <tr>
+		<th>Ablative</th>
+		<td>īnsulā</td>
+		<td>īnsulīs</td>
+	      </tr>
+	      <tr>
+		<th>Vocative</th>
+		<td>īnsula</td>
+		<td>īnsulae</td>
+	      </tr>
+	    </table>
+	    <details>
+	      <summary>Learn More</summary>
+	      These are Latin noun cases which let the reader know what the noun is doing
+	      in the sentence eg subject, direct object, indirect object
+	    </details>
+	    <h3 id="Pizza">Pizza rolls</h3>
+	    <form>
+	      <fieldset>
+		<legend>Leave a comment on my webzone, I'll mail you a pizza roll!</legend>
+		<label>Name:
+		  <input type="text" name="submitted-name">
+		</label>
+		<label>Address:
+		  <input type="text" name="address">
+		</label><br><br>
+		<textarea name="comment"
+			  rows="4"
+			  cols="40">What a great website!</textarea><br>
+		<input type="button" value="Post!">
+		<label>pizza roll?
+		  <input type="checkbox" value="pizza roll?">
+		</label>
+	      </fieldset>
+	    </form>
+	    <h3 id="Survey">Uhh survey</h3>
+	    <form>
+	    Favorite Star Wars Movie?
+	    <select>
+	      <optgroup label="Prequel">
+		<option>Phantom Menace</option>
+		<option>Attack of the Clones</option>
+		<option>Revenge of the Sith</option>
+	      </optgroup>
+	      <optgroup label="Original">
+		<option>Star Wars</option>
+		<option>The Empire Strikes Back</option>
+		<option>Return of The Jedi</option>
+	      </optgroup>
+	      <optgroup label="Sequel" disabled>
+		<option>The Force Awakens</option>
+		<option>The Last Jedi</option>
+		<option>The Rise of Skywalker</option>
+	      </optgroup>
+	      <optgroup label="NOPE">
+		<option>Uhh I don't like Star Wars</option>
+	    </select>
+	    <br>
+	    How hyped are you for cse 110?
+	    <input type="range">
+	    <br>
+	    What time is it?
+	    <input type="time">
+	    <br>
+	    What's your favorite website?
+	    <input type="url">
+	    <br>
+	    Can I borrow your credit card number?
+	    <input type="password">
+	    <br>
+	    Don't forget the three tricky guys on the back!
+	    <input type="password" maxlength="3" minlength="3">
+	    <br>
+	    Post the 12th image in your image folder:
+	    <input type="file" accept=".png,.jpg">
+	    <br>
+	    What is your favorite number?
+	    <input type="number">
+	    <br>
+	    <label for="myEditor">What is your favorite editor?</label>
+	    <input list="editors" id="myEditor" name="myEditor" />
+	    <datalist id="editors">
+	      <option value="emacs">
+	      <option value="vi/vim">
+	      <option value="sam">
+	      <option value="Ed, man! !man ed">
+	    </datalist>
+	    <br>
+	    Want to start over?
+	    <input type="reset" value="Yes!">
+	    <br>
+	    <input type="submit" value="Submit">
+	    </form>
+	    Results:<br>
+	    <template>
+	      <tr>
+		<td>Your Answer</td>
+		<td></td>
+	      </tr>
+	    </template>
+	</main>
+	<footer>
+	  <h3 id="Bottom">Thanks for visiting!</h3>
+	  Don't forget to smash the like button!
+	  <button>Like!</button><br>
+	  <svg viewBox="0 0 120 60" width="120" height="60" stroke="#b24d7a" fill="#afadbf">
+	    <circle cx="30" cy="50" r="4" />
+	    <circle cx="60" cy="50" r="4" />
+	    <circle cx="90" cy="50" r="4" />
+	    <circle cx="45" cy="35" r="4" />
+	    <circle cx="75" cy="35" r="4" />
+	    <circle cx="60" cy="20" r="4" />
+	  </svg>
+	  <img src="img/linux_now.gif">
+	</footer>
+  </body>
+
 </html>
-		
+
