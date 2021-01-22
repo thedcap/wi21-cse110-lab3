@@ -36,6 +36,24 @@ header {
     
 }
 
+#friend {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
+
+#friend:hover{
+    bottom: 60px;
+}
+
+#navbar {
+    position: static;
+}
+
+#prompt {
+    display: inline;
+}
+
 h1, h2, h3 {
     font-family: IBMPlexSerifBold;
 }
@@ -104,15 +122,72 @@ figure {
     color: gainsboro;
 }
 
+#monke {
+    max-width: 480px;
+}
+
 em.sarcasm {
     color: gainsboro;
     text-decoration: underline;
 }
 
+iframe {
+    min-height: 480px;
+    min-width: 640px;
+}
+
+#monkefig {
+    grid-area: topleft;
+}
+
+#compsci {
+    grid-area: topright;
+}
+
+#frame {
+    grid-area: botleft;
+}
+
+#pic {
+    grid-area: botright;
+}
+
+@media screen and (max-width: 1200px) {
+    #pic {
+	width: 240px;
+    }
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 660px 620px;
+    grid-template-rows: 520px 520px;
+    grid-template-areas:
+	"topleft topright"
+	"botleft botright";
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+#latin {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+button:active {
+    background-color: gainsboro;
+}
+
 canvas {
     border-style: solid;
     border-radius: 0px 100px / 120px;
-    background-color: #dcd
+    background-color: #dcd;
+    display: block;
 }
 
 b {
