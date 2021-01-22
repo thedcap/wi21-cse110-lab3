@@ -20,11 +20,13 @@
     </header>
     <hr>
     <main>
-      Tunes?<br>
-      <audio controls loop
+      <img id="friend" src="resource/momtargetsmall.png"
+	   src="resource/momtargetbigger.png">
+      <p id="prompt">Tunes?
+      <audio id="musicplayer" controls loop
 	     src="resource/LeaderofthePack.ogg">
-      </audio><br><br>
-      GOTO:
+      </audio></p><br><br>
+      <p id="navbar">GOTO:
       <nav>
 	<ul>
 	  <li><a href="#AboutMe">A bit about me</a></li>
@@ -35,6 +37,7 @@
 	  <li><a href="#Bottom">Bottom</a></li>
 	</ul>
       </nav>
+      </p>
       <hr>
       <section>
 	<h3 id="AboutMe">A bit about me</h3>
@@ -98,8 +101,9 @@
       </section>
       <section>
 	<h3 id="Fun">A little fun</h3>
-	<figure>
-	  <video controls>
+	<div id="grid">
+	<figure id="monkefig">
+	  <video id="monke" controls>
 	    <source src="resource/dancing_beast.webm" type="video/webm">
 	      <source src="resource/dancing_beast.mp4" type="video/mp4">
 		Unfortunately your browser does not support our
@@ -107,61 +111,147 @@
 	  </video>
 	  <figcaption>Careful though, this video contains AoT <strong>spoilers!</strong></figcaption>
 	</figure>
-	<figure>
+	<figure id="compsci">
 	  <img src="resource/compsci.gif">
 	  <figcaption>Its what the <em class="sarcasm">experts</em> say...</figcaption>
 	</figure>
-	Here's an interesting/useful website to look up integer sequences:<br>
-	<iframe src="https://oeis.org/" width="640" height="480"></iframe>
+	<iframe id="frame" src="https://oeis.org/"></iframe>
 	<br>
-	Here's a small space for a canvas. Stay tuned!
-	<br>
-	<canvas width="600" height="400">
+	<canvas id="pic" width="600" height="400">
 	  It's a canvas!
-	</canvas><br><br>
-	<table style="margin: auto;">
-	  <caption>Wow its Latin!</caption>
-	  <colgroup>
-	    <col>
-	    <col span="1">
-	    <col span="1">
-	  </colgroup>
-	  <tr>
-	    <td></td>
-	    <th>Singular</th>
-	    <th>Plural</th>
-	  </tr>
-	  <tr>
-	    <th>Nominative</th>
-	    <td>īnsula</td>
-	    <td>īnsulae</td>
-	  </tr>
-	  <tr>
-	    <th>Genitive</th>
-	    <td>īnsulae</td>
-	    <td>īnsulārum</td>
-	  </tr>
-	  <tr>
-	    <th>Dative</th>
-	    <td>īnsulae</td>
-	    <td>īnsulīs</td>
-	  </tr>
-	  <tr>
-	    <th>Accusative</th>
-	    <td>īnsulam</td>
-	    <td>īnsulās</td>
-	  </tr>
-	  <tr>
-	    <th>Ablative</th>
-	    <td>īnsulā</td>
-	    <td>īnsulīs</td>
-	  </tr>
-	  <tr>
-	    <th>Vocative</th>
-	    <td>īnsula</td>
-	    <td>īnsulae</td>
-	  </tr>
-	</table>
+	</canvas>
+	</div>
+	<div id="latin">
+	  <table style="margin: auto;">
+	    <caption>Wow its (feminine) Latin!</caption>
+	    <colgroup>
+	      <col>
+	      <col span="1">
+	      <col span="1">
+	    </colgroup>
+	    <tr>
+	      <td></td>
+	      <th>Singular</th>
+	      <th>Plural</th>
+	    </tr>
+	    <tr>
+	      <th>Nominative</th>
+	      <td>īnsula</td>
+	      <td>īnsulae</td>
+	    </tr>
+	    <tr>
+	      <th>Genitive</th>
+	      <td>īnsulae</td>
+	      <td>īnsulārum</td>
+	    </tr>
+	    <tr>
+	      <th>Dative</th>
+	      <td>īnsulae</td>
+	      <td>īnsulīs</td>
+	    </tr>
+	    <tr>
+	      <th>Accusative</th>
+	      <td>īnsulam</td>
+	      <td>īnsulās</td>
+	    </tr>
+	    <tr>
+	      <th>Ablative</th>
+	      <td>īnsulā</td>
+	      <td>īnsulīs</td>
+	    </tr>
+	    <tr>
+	      <th>Vocative</th>
+	      <td>īnsula</td>
+	      <td>īnsulae</td>
+	    </tr>
+	  </table>
+	  <table style="margin: auto;">
+	    <caption>Wow its (masculine) Latin!</caption>
+	    <colgroup>
+	      <col>
+	      <col span="1">
+	      <col span="1">
+	    </colgroup>
+	    <tr>
+	      <td></td>
+	      <th>Singular</th>
+	      <th>Plural</th>
+	    </tr>
+	    <tr>
+	      <th>Nominative</th>
+	      <td>fīlius</td>
+	      <td>fīliī</td>
+	    </tr>
+	    <tr>
+	      <th>Genitive</th>
+	      <td>fīliī</td>
+	      <td>fīliōrum</td>
+	    </tr>
+	    <tr>
+	      <th>Dative</th>
+	      <td>fīliō</td>
+	      <td>fīliīs</td>
+	    </tr>
+	    <tr>
+	      <th>Accusative</th>
+	      <td>fīlium</td>
+	      <td>fīliōs</td>
+	    </tr>
+	    <tr>
+	      <th>Ablative</th>
+	      <td>fīliō</td>
+	      <td>fīliīs</td>
+	    </tr>
+	    <tr>
+	      <th>Vocative</th>
+	      <td>fīlī</td>
+	      <td>fīliī</td>
+	    </tr>
+	  </table>
+	  <table style="margin: auto;">
+	    <caption>Wow its (neuter) Latin!</caption>
+	    <colgroup>
+	      <col>
+	      <col span="1">
+	      <col span="1">
+	    </colgroup>
+	    <tr>
+	      <td></td>
+	      <th>Singular</th>
+	      <th>Plural</th>
+	    </tr>
+	    <tr>
+	      <th>Nominative</th>
+	      <td>auxilium</td>
+	      <td>auxilia</td>
+	    </tr>
+	    <tr>
+	      <th>Genitive</th>
+	      <td>auxiliī</td>
+	      <td>auxiliōrum</td>
+	    </tr>
+	    <tr>
+	      <th>Dative</th>
+	      <td>auxiliō</td>
+	      <td>auxiliīs</td>
+	    </tr>
+	    <tr>
+	      <th>Accusative</th>
+	      <td>auxilium</td>
+	      <td>auxilia</td>
+	    </tr>
+	    <tr>
+	      <th>Ablative</th>
+	      <td>auxiliō</td>
+	      <td>auxiliīs</td>
+	    </tr>
+	    <tr>
+	      <th>Vocative</th>
+	      <td>auxilium</td>
+	      <td>auxilia</td>
+	    </tr>
+	  </table>
+	</div>
 	<details>
 	  <summary>Learn More</summary>
 	  These are Latin noun cases which let the reader know what the noun is doing
