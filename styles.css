@@ -1,29 +1,112 @@
-/* a global background color */
-* { background-color: #778899; }
+/* global defaults are internal to the html doc. override here */
+
+@font-face {
+	font-family: IBMPlexSerif;
+	src: url("resource/IBMPlexSerif-Text.ttf");
+}
+@font-face {
+	font-family: IBMPlexSerifBold;
+	src: url("resource/IBMPlexSerif-Bold.ttf");
+}
+@font-face {
+	font-family: IBMPlexMono;
+	src: url("resource/IBMPlexMono-Regular.ttf");
+}
+
+a[href] {
+    color: black;
+}
+
+a[href]:visited {
+    color: gainsboro;
+}
+
+header ~ p {
+    margin-left: 1px;
+}
 
 header {
+    margin: 0em 0em 0em .1em;
+    width: 600px;
+    height: 130px;
     border-style: solid;
     border-width: 2px;
     border-color: black;
     background-color: rgba(220,220,220,100);
-    color: black;
-	
+    
 }
 
+h1, h2, h3 {
+    font-family: IBMPlexSerifBold;
+}
+    
+
 h1 {
+    padding-left: 4px;
     background-color: hsla(0,0%,86.3%,100%);
     color: black;
 }
+
 h2 {
+    padding-left: 4px;
     background-color: rgb(220,220,220);
     color: black;
 }
+
+main {
+    margin-left: .1em;
+}
+
 h3 {
+    width: 200px;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: .1em;
+    margin-right: 0em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
     border-style: solid;
     border-width: 2px;
     border-color: black;
     background-color: hsl(0,0%,86.3%);
     color: black;
+    text-align: left;
+}
+
+
+ul > li { 
+    padding: 0px 0px 0px 4px;
+}
+
+ol li { 
+    padding: 0px 0px 0px 4px;
+}
+
+.quote {
+    margin-left: 4em;
+}
+
+#quoteauthor {
+    margin-left: 5.5em;
+}
+
+code {
+    font-family: IBMPlexMono;
+}
+
+figure {
+    margin-left: .1em;
+}
+
+* + figcaption {
+    color: gainsboro;
+}
+
+em.sarcasm {
+    color: gainsboro;
+    text-decoration: underline;
 }
 
 canvas {
@@ -31,3 +114,9 @@ canvas {
     border-radius: 0px 100px / 120px;
     background-color: #dcd
 }
+
+b {
+    font-family: IBMPlexSerifBold;
+}
+
+

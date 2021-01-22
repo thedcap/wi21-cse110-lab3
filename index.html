@@ -3,18 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title> dcap's Page </title>
-    <link rel="icon" href="img/terminal.png">
+    <link rel="icon" href="resource/terminal.png">
     <link rel="stylesheet" href="styles.css">
   </head>
+  <style>
+    * {
+	background-color: #778899;
+	color: black;
+	font-family: IBMPlexSerif;
+    }
+  </style>
   <body>
     <header>
       <h1>Welcome to dcap's Page</h1>
       <h2>This page is for the illustrious CSE 110 course</h2>
     </header>
+    <hr>
     <main>
       Tunes?<br>
       <audio controls loop
-	     src="img/LeaderofthePack.ogg">
+	     src="resource/LeaderofthePack.ogg">
       </audio><br><br>
       GOTO:
       <nav>
@@ -31,10 +39,10 @@
       <section>
 	<h3 id="AboutMe">A bit about me</h3>
 	<picture>
-	  <img src="img/freedom_scaled.png" alt="a picture of me">
+	  <img src="resource/freedom_scaled.png" alt="a picture of me">
 	</picture><br>
 	A favorite pic of myself, lightly edited by a friend.
-	You can get it and laugh at it <a href="img/freedom_scaled.png">
+	You can get it and laugh at it <a href="resource/freedom_scaled.png">
 	  here. </a>
 	<ul>
 	  <li>I'm a big proponent of
@@ -54,7 +62,7 @@
 	<ol>
 	  <li>This is my favorite quote:</li>
 	</ol>
-	<blockquote>
+	<blockquote class="quote">
 	  It is entirely conceivable that life’s splendour forever
 	  lies in wait about each one of us in all its fullness, but
 	  veiled from view, deep down, invisible, far off. It is there,
@@ -62,7 +70,7 @@
 	  it by the right word, by its right name, it will come.
 	  This is the essence of magic, which does not create but summons.
 	</blockquote>
-	by Franz Kafka<br><br>
+	 <p id="quoteauthor">by Franz Kafka</p>
 	<ol start="2">
 	  <li>The famous fast inverse square root from <i>Quake III Arena</i>
 	    (stripped of a comment): </li>
@@ -92,25 +100,26 @@
 	<h3 id="Fun">A little fun</h3>
 	<figure>
 	  <video controls>
-	    <source src="img/dancing_beast.webm" type="video/webm">
-	      <source src="img/dancing_beast.mp4" type="video/mp4">
+	    <source src="resource/dancing_beast.webm" type="video/webm">
+	      <source src="resource/dancing_beast.mp4" type="video/mp4">
 		Unfortunately your browser does not support our
 		current video types.
 	  </video>
 	  <figcaption>Careful though, this video contains AoT <strong>spoilers!</strong></figcaption>
 	</figure>
 	<figure>
-	  <img src="img/compsci.gif">
-	  <figcaption>Its what the <em>experts</em> say...</figcaption>
+	  <img src="resource/compsci.gif">
+	  <figcaption>Its what the <em class="sarcasm">experts</em> say...</figcaption>
 	</figure>
 	Here's an interesting/useful website to look up integer sequences:<br>
 	<iframe src="https://oeis.org/" width="640" height="480"></iframe>
 	<br>
 	Here's a small space for a canvas. Stay tuned!
+	<br>
 	<canvas width="600" height="400">
 	  It's a canvas!
 	</canvas><br><br>
-	<table>
+	<table style="margin: auto;">
 	  <caption>Wow its Latin!</caption>
 	  <colgroup>
 	    <col>
@@ -260,7 +269,7 @@
 	<circle cx="75" cy="35" r="4" />
 	<circle cx="60" cy="20" r="4" />
       </svg>
-      <img src="img/linux_now.gif" alt="linuxnow!">
+      <img src="resource/linux_now.gif" alt="linuxnow!">
     </footer>
   </body>
 
